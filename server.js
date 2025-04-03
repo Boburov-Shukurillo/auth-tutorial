@@ -7,6 +7,10 @@ const authRoutes = require('./routes/auth');
 // Middleware
 app.use(express.json());
 
+const cors = require('cors');
+
+// CORSni yoqish
+app.use(cors());
 
 // Middleware
 app.use(express.json());
